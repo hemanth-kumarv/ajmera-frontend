@@ -1,140 +1,51 @@
-<h1 align="center">New React App</h1>
+# User management
 
-<br />
+Webapp which reads a list of users from the server and displays the same on MaterialUI table, with light and dark mode (toggle button which changes theme). You also may add new users to the database, where the inputs are validated with regex. On failure of add user, an error modal/alert popup appears stating the reason what went wrong. Contains unit testing with Jest and Testing Library.
 
-This is a blank README file that you can customize at your needs.\
-Describe your project, how it works and how to contribute to it.
+## Features
 
-<br />
+-   Material UI
+-   Light + Dark Theme
+-   Input validations for add user
+-   Popup modal alert for errors
+-   Unit testing
 
-# 🚀 Available Scripts
+## Demo
 
-In the project directory, you can run:
+Here is a working live demo : https://github.com/hemanth-kumarv/user-management-frontend/screenshots/Ajmera-frontend-demo.mp4
+<video src="/screenshots/Ajmera-frontend-demo.mp4" width=500 ></video>
 
-<br />
+### Light Mode
 
-## ⚡️ start
+![](/screenshots/lightMode.png)
 
-```
-npm start
-```
+### Dark Mode
 
-or
+![](/screenshots/darkMode.png)
 
-```
-yarn start
-```
+### Input validation (for email field)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![](/screenshots/invalidEmail.png)
 
-<br />
+### Error popup/modal
 
-## 🧪 test
+![](/screenshots/addUserFailure.png)
 
-```
-npm test
-```
+## Setup
 
-or
+Clone this repo to your desktop and run `npm install` to install all the dependencies.
 
-```
-yarn test
-```
+To get data, or add data from/to the database, you need to install the backend server from https://github.com/hemanth-kumarv/user-management-backend and run it locally at port 3001.
 
-Launches the test runner in the interactive watch mode.
+## Usage
 
-<br />
+Once the dependencies are installed, you need to run `npm run start` to start the server.
+You will then be able to access it at `localhost:3000`
 
-## 🦾 build
+## To-do
 
-```
-npm build
-```
-
-or
-
-```
-yarn build
-```
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.
-
-<br />
-
-## 🧶 lint
-
-```
-npm lint
-```
-
-or
-
-```
-yarn lint
-```
-
-Creates a `.eslintcache` file in which ESLint cache is stored. Running this command can dramatically improve ESLint's running time by ensuring that only changed files are linted.
-
-<br />
-
-## 🎯 format
-
-```
-npm format
-```
-
-or
-
-```
-yarn format
-```
-
-Checks if your files are formatted. This command will output a human-friendly message and a list of unformatted files, if any.
-
-<br />
-
-# 🧬 Project structure
-
-This is the structure of the files in the project:
-
-```sh
-    │
-    ├── public                  # public files (favicon, .htaccess, manifest, ...)
-    ├── src                     # source files
-    │   ├── components
-    │   ├── pages
-    │   ├── resources           # images, constants and other static resources
-    │   ├── store               # Redux store
-    │   │   ├── actions         # store's actions
-    │   │   └── reducers        # store's reducers
-    │   ├── styles
-    │   ├── tests               # all test files
-    │   ├── types               # data interfaces
-    │   ├── utility             # utilities functions and custom components
-    │   ├── App.tsx
-    │   ├── index.tsx
-    │   ├── react-app-env.d.ts
-    │   ├── RootComponent.tsx   # React component with all the routes
-    │   ├── serviceWorker.ts
-    │   └── setupTests.ts
-    ├── .eslintrc.js
-    ├── .gitignore
-    ├── .prettierrc
-    ├── package.json
-    ├── README.md
-    └── tsconfig.json
-```
-
-# 📖 Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-#
-
-<p align="center">Bootstrapped with Create React App.</p>
+-   Better UX
+-   Handle image uploads for add user
+-   Display loading and success modals/popups
+-   Better error handling
+-   More functionalities
