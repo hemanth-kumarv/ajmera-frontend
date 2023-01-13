@@ -12,7 +12,7 @@ Webapp which reads a list of users from the server and displays the same on Mate
 
 ## Demo
 
-Here is a working live demo : https://github.com/hemanth-kumarv/user-management-frontend/screenshots/Ajmera-frontend-demo.mp4
+Here is a working live demo : https://github.com/hemanth-kumarv/user-management-frontend/blob/main/screenshots/Ajmera-frontend-demo.mp4
 <video src="/screenshots/Ajmera-frontend-demo.mp4" width=500 ></video>
 
 ### Light Mode
